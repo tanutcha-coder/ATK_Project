@@ -17,10 +17,10 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item "><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item "><a href="?controller=pages&action=home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="?controller=rtpcrtesting&action=index" class="nav-link">RT-PCR Result</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Labroom</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Laboratory Analyst</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
             </ul>
             <div class="col-md-3 text-end">

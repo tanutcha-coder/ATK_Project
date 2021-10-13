@@ -1,5 +1,10 @@
 <?php
-    $controllers = array('pages'=>['home','error']);
+    $controllers = array(
+        'pages'=>['home','error'],
+        'rtpcrtesting'=>['index']
+
+
+);
 
     function call($controller,$action){
        echo "routes to ".$controller."-".$action."<br>";
@@ -7,6 +12,8 @@
         switch($controller)
         {
             case "pages" : $controller = new PagesController();
+                           break;
+            case "rtpcrtesting" : $controller = new rtpcrController();
                            break;
           
         }
