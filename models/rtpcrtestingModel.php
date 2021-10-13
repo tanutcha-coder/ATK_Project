@@ -32,7 +32,7 @@ class Rtpcrtesting
             $rtpcr_datetime = $my_row["rtpcr_datetime"];;
             $rtpcr_result = $my_row["rtpcr_result"];;
 
-            $rtpcrList[] = new Rtpcrtesting($rtpcrtesting_ID, $TestingID, $labroom_ID, $result, $officer_N, $labanalyst_Name,$rtpcr_datetime,$rtpcr_result);
+            $rtpcrList[] = new Rtpcrtesting($rtpcrtesting_ID , $TestingID, $labroom_ID, $result, $officer_N, $labanalyst_Name,$rtpcr_datetime,$rtpcr_result);
         }
 
         require("connection_close.php");

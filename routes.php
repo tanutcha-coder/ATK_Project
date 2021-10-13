@@ -13,7 +13,9 @@
         {
             case "pages" : $controller = new PagesController();
                            break;
-            case "rtpcrtesting" : $controller = new rtpcrController();
+            case "rtpcrtesting" :
+                 require_once("models/rtpcrtestingModel.php");
+                 $controller = new rtpcrController();
                            break;
           
         }

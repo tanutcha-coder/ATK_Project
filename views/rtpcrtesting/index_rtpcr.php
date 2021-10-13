@@ -21,7 +21,10 @@
     <div class="container">
 
         <h1 class="mt-5">RT-PCR Testing<span><a href="?controller=quataiondetail&action=newrtpcr" class="btn btn-Success">Add+</a><br></span></h1>
-
+        <?php 
+            echo $rtpcrtesting_ID;
+        
+        ?>
         <br>
 
         <nav class="navbar navbar-dark bg-dark">
@@ -58,7 +61,7 @@
 
 
                 foreach ($rtpcr_list as $q) {
-
+                    
                 ?>
                     <tr>
                         <td><?php echo $q->rtpcrtesting_ID ?></td>
